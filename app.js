@@ -10,7 +10,7 @@ document.getElementById("butt").addEventListener('click', function(){
   var c = ['apple-john', 'baggage', 'barnacle', 'bladder', 'boar-pig', 'bugbear', 'bum-bailey', 'canker-blossom', 'clack-dish', 'clotpole', 'coxcomb', 'codpiece', 'death-token', 'dewberry', 'flap-dragon', 'flax-wench', 'flirt-gill', 'foot-licker', 'fustilarian', 'giglet', 'gudgeon', 'haggard', 'harpy', 'hedge-pig', 'horn-beast', 'hugger-mugger', 'joithead', 'lewdster', 'lout', 'maggot-pie', 'malt-worm', 'mammet', 'measle', 'minnow', 'miscreant', 'moldwarp', 'mumble-news', 'nut-hook', 'pigeon-egg', 'pignut', 'puttock', 'pumpion', 'ratsbane', 'scut', 'skainsmate', 'strumpet', 'varlot', 'vassal', 'whey-face', 'wagtail']
   var rand;
   rand = Math.floor((Math.random() * 49) + 0);
-  res = "<img src='http://icons.iconarchive.com/icons/danleech/simple/32/facebook-icon.png' id='share' />Thou art "
+  res = "Thou art "
   console.log(rand)
   if( isVow(a[rand])){
     res+="an "
