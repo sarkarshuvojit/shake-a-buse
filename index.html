@@ -9,7 +9,7 @@
     <style>
       @font-face{
         font-family: MF;
-        src: url('black_jack.ttf') format('truetype');
+        src: url('/black_jack.ttf') format('truetype');
       }
       body {
         background : #FFC24D;
@@ -33,10 +33,39 @@
   </head>
 
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '683116425149174',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <!-- This code is in the public domain. Enjoy! -->    
     <h1>Shake-a-buse</h1>        
-    <img src="icons/icon128x128.png" id="butt"/>
+    <img src="/icons/icon128x128.png" id="butt"/>
     <h2 id="dest">Click on the icon to generate insults</h2>
   </body>
+
+  <script>
+document.getElementById("dest").addEventListener("click", function(){
+FB.ui({
+  method: 'feed',
+  link: 'http://sarkarshuvojit.github.io/shake-a-buse',
+  name: "This madafakka",
+  message: "To da lo madafakka",
+});
+});
+  </script>
 
 </html>
